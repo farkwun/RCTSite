@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ryerson Community Theatre - Productions</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <script src="js/photo-gallery.js"></script>
+     <script src="js/productions.js"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<style>
+html,body {
+  background-color:#000;
+}
+.gallink p{
+    color:black;
+    font-size:15px;
+}
+
+.gallink:hover p{
+  
+    text-decoration:underline;
+}
+
+.link p{
+    color:black;
+    font-size:10px;
+}
+
+.link:hover p{
+    font-weight:bold;
+    text-decoration:none;
+}
+
+
+
+
+      ul {         
+          padding:0 0 0 0;
+          margin:0 0 0 0;
+      }
+      ul li {     
+          list-style:none;
+          margin-bottom: 25px;           
+      }
+    ul execli {     
+          list-style:none;
+          margin-bottom: 0px;           
+      }
+    ul eventli {     
+          list-style:none;
+          margin-bottom: 0px;           
+      }
+      ul li img {
+          cursor: pointer;
+      }
+      div a{
+        cursor: pointer;
+      }
+
+       ul execli img {
+          cursor: pointer;
+      }
+    ul eventli a {
+          cursor: pointer;
+      }
+
+.panel {
+    padding: 20px;
+    display: none;
+    background-color:#fff;
+}
+
+.galpanel {
+  padding:none;
+    display: none;
+    background-color:#d9edf7;
+}
+      .modal-body {
+          padding:5px !important;
+      }
+      .modal-content {
+          border-radius:0;
+          background-color:#e4e4e4;
+      }
+      .modal-dialog img {
+          text-align:center;
+          margin:0 auto;
+      }
+    .controls{          
+        width:50px;
+        display:block;
+        font-size:11px;
+        padding-top:8px;
+        font-weight:bold;          
+    }
+    .next {
+        float:right;
+        text-align:right;
+    }
+      /*override modal for demo only*/
+      .modal-dialog {
+          max-width:500px;
+          max-height:200px;
+          padding-top: 90px;
+      }
+      @media screen and (min-width: 768px){
+          .modal-dialog {
+              width:1000px;
+            height:500px;
+              padding-top: 90px;
+          }          
+      }
+      @media screen and (max-width:1500px){
+          #ads {
+              display:none;
+          }
+      }
+  </style>
+<body id="page-top" style = "display:none">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html"><i class = "fa fa-arrow-left" height="50" width = "50"></i></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                 <!--   <li>
+                        <a class="page-scroll" href="index.html" data-info = "#home">Back</a>
+                    </li> -->
+        <!--             <li>
+                        <a class="page-scroll" href="index.html" data-info = "#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html" data-info = "#events">Upcoming Events</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="productions.html" data-info = "newpage">Productions</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="gallery.html" data-info = "newpage">Gallery</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="index.html" data-info = "#executives">Executives</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html" data-info = "#contact">Contact</a>
+                    </li>
+ -->                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content" style = "padding-top:0px">  
+            <section class = "bg-info" style = "height:500px" >
+      <div class="container">
+            <div class="row">
+               <div class="col-lg-12 text-center" style = "padding-bottom:10px">
+             
+                         
+                    <h2 class="section-heading" style = "color:#F05F40">Gallery</h2>
+                    <hr class="light">
+
+                     <a class="btn btn-default btn-xl" data-info = "#2015">2015</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <a class="btn btn-default btn-xl" data-info = "#2014">2014</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  
+                        <a class="btn btn-default btn-xl" data-info = "#2013">2013</a>  
+                </div>
+                
+                </div>
+            </div>
+        
+        <div class="container" >
+            <div class="row" >
+
+              <div class = "col-md-2 text-center"  >
+         <h2></h2>
+    <h2></h2>
+    <h2></h2>
+
+     
+        <div class = "galpanel text-right" id = "2015">
+               <a class = "link" data-info = "#clubs2015">
+            <p style = "text-decoration:none">Clubs Day</p>
+        </a>
+                   <a class = "link" data-info = "#endshow2015">
+            <p style = "text-decoration:none">End of Year Show</p>
+        </a>
+                   <a class = "link" data-info = "#aud2015">
+            <p style = "text-decoration:none">Auditions</p>
+        </a>
+</div>
+      
+   
+              
+                <div class = "galpanel  text-right" id = "2014">
+               <a class = "link" data-info = "#clubs2014">
+            <p style = "text-decoration:none">Clubs Day</p>
+        </a>
+                   <a class = "link" data-info = "#endshow2014">
+            <p style = "text-decoration:none">End of Year Show</p>
+        </a>
+                   <a class = "link" data-info = "#aud2014">
+            <p style = "text-decoration:none">Auditions</p>
+        </a>
+</div>
+          
+                <div class = "galpanel  text-right" id = "2013">
+               <a class = "link" data-info = "#clubs2013">
+            <p style = "text-decoration:none">Clubs Day</p>
+        </a>
+                   <a class = "link" data-info = "#endshow2013">
+            <p style = "text-decoration:none">End of Year Show</p>
+        </a>
+                   <a class = "link" data-info = "#aud2013">
+            <p style = "text-decoration:none">Auditions</p>
+        </a>
+</div>
+   
+          </div>
+              <div class = "col-md-10 text-center">
+
+                
+        <div class = "panel" id = "clubs2015" style="height:280px">
+            <ul class="row" id = "c2015" data-info = "Clubs Day 2015">
+             <p style = "color:black">Clubs Day 2015</p>
+
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-460760-colors-xs.jpg">
+            </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-461673-retro-party-xs.jpg">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-682990-online-search-xs.jpg">
+            </li>
+          </ul> 
+
+    </div>
+     <div class = "panel" id = "endshow2015" style="height:280px">
+            <ul class="row" id = "es2015" data-info = "End of Year Show 2015">
+             <p style = "color:black">End of Year Show 2015</p>
+
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-460760-colors-xs.jpg">
+            </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-461673-retro-party-xs.jpg">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-682990-online-search-xs.jpg">
+            </li>
+          </ul> 
+
+    </div>
+
+   <div class = "panel" id = "aud2015" style="height:280px">
+            <ul class="row" id = "a2015" data-info = "Auditions 2015">
+             <p style = "color:black">Auditions 2015</p>
+
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-460760-colors-xs.jpg">
+            </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-461673-retro-party-xs.jpg">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-682990-online-search-xs.jpg">
+            </li>
+          </ul> 
+
+    </div>
+
+        <div class = "panel" id = "clubs2014" style="height:280px">
+            <ul class="row" id = "c2014" data-info = "Clubs Day 2014">
+             <p style = "color:black">Clubs Day 2014</p>
+
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-460760-colors-xs.jpg">
+            </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-461673-retro-party-xs.jpg">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-682990-online-search-xs.jpg">
+            </li>
+          </ul> 
+
+    </div>
+     <div class = "panel" id = "endshow2014" style="height:280px">
+            <ul class="row" id = "es2014" data-info = "End of Year Show 2014">
+             <p style = "color:black">End of Year Show 2014</p>
+
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-460760-colors-xs.jpg">
+            </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-461673-retro-party-xs.jpg">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-682990-online-search-xs.jpg">
+            </li>
+          </ul> 
+
+    </div>
+
+   <div class = "panel" id = "aud2014" style="height:280px">
+            <ul class="row" id = "a2014" data-info = "Auditions 2014">
+             <p style = "color:black">Auditions 2014</p>
+
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-460760-colors-xs.jpg">
+            </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-461673-retro-party-xs.jpg">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-682990-online-search-xs.jpg">
+            </li>
+          </ul> 
+
+    </div>
+
+        <div class = "panel" id = "clubs2013" style="height:280px">
+            <ul class="row" id = "c2013" data-info = "Clubs Day 2013">
+             <p style = "color:black">Clubs Day 2013</p>
+
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-460760-colors-xs.jpg">
+            </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-461673-retro-party-xs.jpg">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-682990-online-search-xs.jpg">
+            </li>
+          </ul> 
+
+    </div>
+     <div class = "panel" id = "endshow2013" style="height:280px">
+            <ul class="row" id = "es2013" data-info = "End of Year Show 2013">
+             <p style = "color:black">End of Year Show 2013</p>
+
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-460760-colors-xs.jpg">
+            </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-461673-retro-party-xs.jpg">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-682990-online-search-xs.jpg">
+            </li>
+          </ul> 
+
+    </div>
+
+   <div class = "panel" id = "aud2013" style="height:280px">
+            <ul class="row" id = "a2013" data-info = "Auditions 2013">
+             <p style = "color:black">Auditions 2013</p>
+
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-460760-colors-xs.jpg">
+            </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-461673-retro-party-xs.jpg">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="img/valmasque/photodune-682990-online-search-xs.jpg">
+            </li>
+          </ul> 
+
+    </div>
+              </div>
+
+           
+            </div>
+        </div>
+
+
+    </section>
+        </div>
+    </header>
+
+
+
+       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>
