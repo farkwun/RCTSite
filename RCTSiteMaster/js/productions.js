@@ -38,6 +38,9 @@ $(document).ready(function(){
  console.log(check);
  $(check).slideUp();
       $(panel).slideToggle("slow");
+
+  
+
     });
 });
 
