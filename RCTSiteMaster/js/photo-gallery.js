@@ -47,7 +47,7 @@ $(document).ready(function(){
 		html+= '<p></p>'
 		html += img;       
 		html+= '<p></p>'         
-		html += '<div class = "events" style="height:100px;clear:both;display:block;">';
+		html += '<div class = "events" style="height:250px;clear:both;display:block;">';
 		//	html += '<p class = "executives" style="font-size:70%">' + bio + '</p>';
 		html += '<p class = "executives">' + info + '</p>';
 
@@ -78,7 +78,7 @@ $(document).ready(function(){
 $(document).ready(function(){        
 	$('execli img').on('click',function(){
 		var src = $(this).attr('src');
-		var img = '<img src="' + src + '" class="img-responsive" width = "200" height = "108"/>';
+		var img = '<img src="' + src + '" class="img-responsive" width = "300" height = "162"/>';
 		var bio = $(this).attr('alt');
 		
 		//start of new code new code
